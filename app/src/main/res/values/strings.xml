@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">5 Minutes</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="password">Password</string>
+    <string name="user_name">User Name</string>
+    <string name="student_id">Student ID</string>
+    <string name="slogan">travel with no regrets</string>
+    <string name="fill_all_fields">Fill all fields</string>
+    <string name="app_logo">App Logo</string>
+    <string name="white_gradient">White Gradient</string>
+    <string name="blue_point">Blue point</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="feedback">Feedback</string>
+    <string name="about_us">About Us</string>
+    <string name="navigation">Navigation</string>
+    <string name="home">Home</string>
+    <string name="buses">Buses</string>
+    <string name="profile">Profile</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="try_again">Try Again</string>
+    <string name="amr_bakr">Amr Bakr</string>
+    <string name="item_home_test_text">lets catch up soon . Do you want to grab lunch  sometimes this weekend? let me know when you\'re free!</string>
+    <string name="time">Time</string>
+    <string name="submit">Submit</string>
+    <string name="mobile_number">Mobile number</string>
+    <string name="email">Email</string>
+    <string name="home_address">Home address</string>
+    <string name="bus_line">Bus Line</string>
+    <string name="university">University</string>
+    <string name="faculty">Faculty</string>
+    <string name="level">Level</string>
+    <string name="user_profile_photo">User profile photo</string>
+    <string name="time_table_photo">Time table photo</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="tost_profile_table_images">please select your profile image and table image</string>
+
+
+    <string name="google_maps_API_key">AIzaSyBiqNArY-7vdKuKY33QQvtWdw81vDd7MQs</string>
+    <string name="tell_us_what_is_your_feedback_and_explain">Tell us, what is your feedback and explain</string>
+    <string name="exit">Exit</string>
+
+
+</resources>
