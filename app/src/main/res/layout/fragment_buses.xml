@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_buses"
+    >
     <android.support.v7.widget.RecyclerView
         android:id="@+id/buses_fragment_recycler"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginStart="@dimen/d10"
-        android:layout_marginEnd="@dimen/d10"
         />
-</LinearLayout>
+
+</FrameLayout>

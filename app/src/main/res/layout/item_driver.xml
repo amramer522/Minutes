@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:id="@+id/ll_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/d25"
+        android:layout_marginStart="@dimen/d10"
+        android:layout_marginTop="@dimen/d10"
+        android:layout_marginEnd="@dimen/d10"
+        android:background="@drawable/shape_radius_corners"
+        >
+
+        <TextView
+            android:id="@+id/item_driver_time"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="@string/bus_time"
+            />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/item_driver_img"
+            android:layout_marginTop="@dimen/d15"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="@dimen/d70"
+            android:layout_height="@dimen/d70" />
+
+        <TextView
+            android:id="@+id/item_driver_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/d20"
+            android:text="@string/driver_name"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey"
+            android:layout_marginTop="@dimen/d10"
+            />
+
+        <TextView
+            android:id="@+id/item_driver_num_of_student"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/student_on_bus"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/d10"
+
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey"
+            android:layout_marginTop="@dimen/d10"
+
+            />
+        <TextView
+            android:id="@+id/item_driver_num_of_available_seats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/available_seats"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/d10"
+
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey"
+            android:layout_marginTop="@dimen/d10"
+
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d25"
+            >
+            <ImageView
+                android:id="@+id/item_driver_call"
+                android:layout_width="@dimen/d50"
+                android:layout_height="@dimen/d50"
+                android:src="@drawable/ic_buses_call_driver"
+                android:layout_centerHorizontal="true"
+                />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/item_driver_bus_request"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/d100"
+        android:layout_marginTop="-3dp"
+        android:text="@string/bus_request"
+        android:layout_below="@id/ll_details"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:background="@drawable/shape_button_in_item_driver"
+        />
+
+
+</RelativeLayout>

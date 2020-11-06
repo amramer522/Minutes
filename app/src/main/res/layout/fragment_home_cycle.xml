@@ -15,23 +15,21 @@ android:orientation="vertical"
     android:layout_height="wrap_content"
     app:tabIndicatorHeight="@dimen/d0"
     android:layout_marginTop="@dimen/d50"
-    android:background="@color/blue"
+    android:background="@color/dark_blue"
     app:tabTextColor="@color/white"
     app:tabSelectedTextColor="@color/oragne"
     />
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/Home_Cycle_Fragment_Srl_Swipe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
 
-
+        >
 <android.support.v4.view.ViewPager
     android:id="@+id/content_home_pager"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginStart="@dimen/d4"
-    android:layout_marginEnd="@dimen/d4"
-    android:paddingStart="@dimen/d4"
-    android:paddingEnd="@dimen/d4"
-    >
-
-</android.support.v4.view.ViewPager>
-
+    />
+    </android.support.v4.widget.SwipeRefreshLayout>
 
 </LinearLayout>

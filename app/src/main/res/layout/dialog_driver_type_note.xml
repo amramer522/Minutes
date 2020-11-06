@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_note_dialog"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/item_driver_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/write_your_note_then_mark_your_location_on_the_map"
+        android:textColor="@color/white"
+        android:textSize="@dimen/s20"
+        android:paddingStart="@dimen/d20"
+        android:paddingEnd="@dimen/d20"
+        android:textAlignment="center"
+        android:layout_marginBottom="@dimen/d100"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/d10"
+        android:layout_marginTop="@dimen/d10"
+        android:layout_marginEnd="@dimen/d10"
+        android:background="@drawable/shape_radius_corners"
+        android:orientation="vertical"
+        android:padding="@dimen/d25"
+        >
+
+        <EditText
+            android:id="@+id/editText_note"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d100"
+            android:layout_marginTop="@dimen/d10"
+            android:background="@drawable/shape_stroke_rectangle"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="@string/type_your_note"
+            android:inputType="text"
+            android:padding="@dimen/d10" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/dialog_driver_note_Btn_mark_student_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="@dimen/d50"
+        android:layout_marginTop="-3dp"
+        android:layout_marginEnd="@dimen/d50"
+        android:background="@drawable/shape_button_in_item_driver"
+        android:text="@string/mark_your_location"
+        android:textColor="@color/white" />
+
+
+</LinearLayout>

@@ -3,77 +3,84 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg_login"
-    >
+    android:background="@drawable/bg_login">
+
     <!--<ImageView-->
         <!--android:layout_width="match_parent"-->
         <!--android:layout_height="match_parent"-->
+        <!--android:layout_alignBottom="@id/login_activity_iv_logo"-->
+        <!--android:layout_alignParentStart="true"-->
         <!--android:contentDescription="@string/app_logo"-->
         <!--android:scaleType="fitXY"-->
-        <!--android:layout_alignParentStart="true"-->
-        <!--android:layout_alignBottom="@id/login_activity_iv_logo"-->
-        <!--android:src="@drawable/shape_gradient_white"-->
-        <!--/>-->
+        <!--android:src="@drawable/shape_gradient_white" />-->
 
 
+    <!--<ImageView-->
+        <!--android:id="@+id/login_activity_iv_logo"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/d150"-->
+        <!--android:layout_marginTop="@dimen/d80"-->
+        <!--android:contentDescription="@string/white_gradient"-->
+        <!--android:src="@drawable/img_app_logo" />-->
 
 
-    <!--android:src="@drawable/img_app_logo"-->
-
-    <ImageView
-        android:id="@+id/login_activity_iv_logo"
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="@dimen/d150"
-        android:scaleType="fitXY"
-        android:paddingEnd="@dimen/d20"
-        android:paddingStart="@dimen/d20"
-        android:contentDescription="@string/white_gradient"
-        android:layout_marginTop="@dimen/d80"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:gravity="center"
+        android:textSize="@dimen/s90"
+        android:fontFamily="@font/paul"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/d90"
+        android:layout_alignParentStart="true"
         />
 
     <android.support.design.widget.TextInputLayout
         android:id="@+id/login_activity_til_student_id"
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_above="@id/login_activity_til_password"
-        android:textColorHint="@color/white"
-        android:layout_height="wrap_content">
+        android:textColorHint="@color/white">
 
         <android.support.design.widget.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
+            android:inputType="number"
+            android:textColor="@color/white"
             android:hint="@string/student_id" />
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
         android:id="@+id/login_activity_til_password"
         android:layout_width="match_parent"
-        android:layout_marginTop="@dimen/d16"
         android:layout_height="wrap_content"
         android:layout_above="@id/login_activity_btn_sign_in"
-        app:passwordToggleEnabled="true"
+        android:layout_marginTop="@dimen/d16"
         android:textColorHint="@color/white"
-
         >
 
         <android.support.design.widget.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:inputType="numberPassword"
             android:gravity="center"
+            android:textColor="@color/white"
             android:hint="@string/password" />
     </android.support.design.widget.TextInputLayout>
 
     <Button
         android:id="@+id/login_activity_btn_sign_in"
         android:layout_width="match_parent"
-        android:layout_marginStart="@dimen/d90"
-        android:layout_marginEnd="@dimen/d90"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/d16"
-        android:background="@drawable/shape_sign_in_btn"
-        android:textColor="@color/white"
         android:layout_above="@id/login_activity_btn_sign_up"
-        android:text="@string/sign_in" />
+        android:layout_marginStart="@dimen/d90"
+        android:layout_marginTop="@dimen/d16"
+        android:layout_marginEnd="@dimen/d90"
+        android:background="@drawable/shape_sign_in_btn"
+        android:text="@string/sign_in"
+        android:textColor="@color/white" />
 
     <TextView
         android:id="@+id/login_activity_btn_sign_up"
@@ -81,12 +88,12 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:textSize="@dimen/s20"
         android:layout_marginTop="@dimen/d16"
         android:layout_marginBottom="@dimen/d50"
+        android:text="@string/sign_up"
         android:textColor="@color/white"
-        android:textStyle="bold"
-        android:text="@string/sign_up" />
+        android:textSize="@dimen/s20"
+        android:textStyle="bold" />
 
 
 </RelativeLayout>

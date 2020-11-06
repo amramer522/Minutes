@@ -1,54 +1,294 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center_horizontal"
-    android:orientation="vertical"
     android:background="@color/white"
     >
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <ImageView
-        android:id="@+id/profile_fragment_img"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/d70"
-        android:src="@drawable/ic_profile150"
-        />
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical">-->
 
-    <TextView
-        android:id="@+id/profile_fragment_tv_user_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/user_name"
-        android:layout_marginTop="@dimen/d10"
-        />
+        <!--<ImageView-->
+        <!--android:id="@+id/profile_fragment_img"-->
+        <!--android:layout_width="@dimen/d200"-->
+        <!--android:layout_height="@dimen/d200"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:layout_marginTop="@dimen/d70"-->
+        <!--android:src="@drawable/ic_profile_person" />-->
+        <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/d1"-->
+        <!--android:background="@color/grey"-->
+        <!--android:layout_marginTop="@dimen/d10"-->
 
-    <TextView
-        android:id="@+id/profile_fragment_tv_bus_line"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/bus_line"
-        android:layout_marginTop="@dimen/d10"
-        />
+        <!--/>-->
 
-    <TextView
-        android:id="@+id/profile_fragment_tv_email"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/email"
-        android:layout_marginTop="@dimen/d10"
-        />
+        <!--<TextView-->
+        <!--android:id="@+id/profile_fragment_tv_user_name"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginStart="@dimen/d10"-->
+        <!--android:layout_marginTop="@dimen/d10"-->
+        <!--android:text="@string/user_name"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:textColor="@color/black"-->
+        <!--android:textSize="@dimen/s30" />-->
+        <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/d1"-->
+        <!--android:layout_marginTop="@dimen/d10"-->
+        <!--android:background="@color/grey"/>-->
 
-    <TextView
-        android:id="@+id/profile_fragment_tv_mobile_number"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/mobile_number"
-        android:layout_marginTop="@dimen/d10"
-        />
+        <!--<TextView-->
+        <!--android:id="@+id/profile_fragment_tv_id"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="@dimen/d10"-->
+        <!--android:gravity="center"-->
+        <!--android:textSize="@dimen/s20"-->
+        <!--android:drawablePadding="@dimen/d10"-->
+        <!--android:drawableStart="@drawable/ic_student_id"-->
+        <!--android:textColor="@color/black"-->
+        <!--android:text="@string/student_id" />-->
+
+        <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/d1"-->
+        <!--android:layout_marginTop="@dimen/d10"-->
+        <!--android:background="@color/grey"/>-->
 
 
-</LinearLayout>
+        <!--<TextView-->
+        <!--android:id="@+id/profile_fragment_tv_email"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textColor="@color/black"-->
+        <!--android:drawableStart="@drawable/ic_user_email"-->
+        <!--android:drawablePadding="@dimen/d10"-->
+        <!--android:layout_marginTop="@dimen/d10"-->
+        <!--android:gravity="center"-->
+        <!--android:textSize="@dimen/s20"-->
+        <!--android:text="@string/email" />-->
+        <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/d1"-->
+        <!--android:background="@color/grey"-->
+        <!--android:layout_marginTop="@dimen/d10"-->
+
+        <!--/>-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/profile_fragment_tv_mobile_number"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textSize="@dimen/s20"-->
+        <!--android:layout_marginTop="@dimen/d10"-->
+        <!--android:gravity="center"-->
+        <!--android:textColor="@color/black"-->
+        <!--android:drawableStart="@drawable/ic_phone"-->
+        <!--android:drawablePadding="@dimen/d10"-->
+        <!--android:text="@string/mobile_number" />-->
+        <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/d1"-->
+        <!--android:background="@color/grey"-->
+        <!--android:layout_marginTop="@dimen/d10"-->
+
+        <!--/>-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/profile_fragment_tv_bus_line"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textColor="@color/black"-->
+        <!--android:layout_marginTop="@dimen/d10"-->
+        <!--android:textSize="@dimen/s20"-->
+        <!--android:gravity="center"-->
+        <!--android:drawablePadding="@dimen/d10"-->
+        <!--android:drawableStart="@drawable/ic_bus_line_map"-->
+        <!--android:text="@string/bus_line"-->
+
+        <!--/>-->
+        <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/d1"-->
+        <!--android:background="@color/grey"-->
+        <!--android:layout_marginTop="@dimen/d10"-->
+        <!--/>-->
+
+        <!--</LinearLayout>-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/profile_fragment_img"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d200"
+                android:scaleType="fitXY"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/d50"
+                android:src="@drawable/ic_profile_person"
+                />
+
+            <!--<TextView-->
+                <!--android:id="@+id/profile_line1"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="@dimen/d1"-->
+                <!--android:layout_below="@id/profile_fragment_img"-->
+                <!--android:layout_marginTop="@dimen/d10"-->
+                <!--android:background="@color/grey"-->
+
+                <!--/>-->
+
+            <TextView
+                android:id="@+id/profile_fragment_tv_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/profile_fragment_img"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="@dimen/d10"
+                android:layout_marginTop="@dimen/d10"
+                android:text="@string/user_name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/s20" />
+
+            <TextView
+                android:id="@+id/profile_line2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d1"
+                android:layout_below="@id/profile_fragment_tv_user_name"
+                android:layout_marginTop="@dimen/d10"
+                android:background="@color/grey"
+
+                />
+
+            <ImageView
+                android:id="@+id/student_id_drawable_start"
+                style="@style/profile_imgs"
+                android:layout_below="@id/profile_line2"
+                app:srcCompat="@drawable/ic_profile_student_id"
+                />
+
+            <TextView
+                android:id="@+id/profile_fragment_tv_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/profile_line2"
+                android:layout_marginStart="@dimen/d10"
+                android:layout_toEndOf="@id/student_id_drawable_start"
+                android:layout_marginTop="@dimen/d15"
+                android:text="@string/student_id"
+                android:textColor="@color/black"
+                android:textSize="@dimen/s20" />
+
+            <TextView
+                android:id="@+id/profile_line3"
+                android:layout_below="@id/profile_fragment_tv_id"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d1"
+                android:layout_marginTop="@dimen/d10"
+                android:background="@color/grey" />
+
+
+            <ImageView
+                android:id="@+id/email_drawable_start"
+                style="@style/profile_imgs"
+                android:layout_below="@id/profile_line3"
+                app:srcCompat="@drawable/ic_profile_email"
+                />
+
+            <TextView
+                android:layout_below="@id/profile_line3"
+                android:id="@+id/profile_fragment_tv_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/d10"
+                android:layout_toEndOf="@id/student_id_drawable_start"
+                android:layout_marginTop="@dimen/d15"
+                android:text="@string/email"
+                android:textColor="@color/black"
+                android:textSize="@dimen/s20" />
+
+            <TextView
+                android:layout_below="@id/profile_fragment_tv_email"
+                android:id="@+id/profile_line4"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d1"
+                android:layout_marginTop="@dimen/d10"
+                android:background="@color/grey"
+                />
+
+            <ImageView
+                android:id="@+id/mobile_number_drawable_start"
+                style="@style/profile_imgs"
+                android:layout_below="@id/profile_line4"
+                app:srcCompat="@drawable/ic_profile_phone"
+                />
+
+            <TextView
+                android:id="@+id/profile_fragment_tv_mobile_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/profile_line4"
+                android:layout_marginStart="@dimen/d10"
+                android:layout_toEndOf="@id/student_id_drawable_start"
+                android:layout_marginTop="@dimen/d15"
+                android:text="@string/mobile_number"
+                android:textColor="@color/black"
+                android:textSize="@dimen/s20" />
+
+            <TextView
+                android:id="@+id/profile_line5"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d1"
+                android:layout_marginTop="@dimen/d10"
+                android:background="@color/grey"
+                android:layout_below="@id/profile_fragment_tv_mobile_number"
+
+                />
+
+            <ImageView
+                android:id="@+id/bus_line_drawable_start"
+                style="@style/profile_imgs"
+                android:layout_below="@id/profile_line5"
+                app:srcCompat="@drawable/ic_profile_map"
+                />
+
+            <TextView
+                android:id="@+id/profile_fragment_tv_bus_line"
+                android:layout_below="@id/profile_line5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/d10"
+                android:layout_toEndOf="@id/student_id_drawable_start"
+                android:layout_marginTop="@dimen/d15"
+                android:text="@string/bus_line"
+                android:textColor="@color/black"
+                android:textSize="@dimen/s20"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d1"
+                android:layout_below="@id/profile_fragment_tv_bus_line"
+                android:layout_marginTop="@dimen/d10"
+                android:background="@color/grey" />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

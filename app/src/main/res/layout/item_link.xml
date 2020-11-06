@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/d20"
+    android:layout_marginEnd="@dimen/d20"
+    android:layout_marginTop="@dimen/d10"
+    >
+
+    <Button
+        android:id="@+id/item_link_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/bus_name"
+        android:background="@color/oragne"
+        android:textColor="@color/white"
+        />
+
+
+
+</android.support.v7.widget.CardView>

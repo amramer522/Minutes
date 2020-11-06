@@ -20,7 +20,7 @@
     <style name="register_editText" parent="Base.Widget.AppCompat.EditText">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">40dp</item>
-        <item name="android:layout_marginStart">@dimen/d35</item>
+        <item name="android:layout_marginStart">53dp</item>
         <item name="android:layout_marginEnd">@dimen/d35</item>
         <item name="android:layout_marginTop">@dimen/d8</item>
         <item name="android:background">@color/white</item>
@@ -31,7 +31,34 @@
     </style>
 
     <style name="NavigationTheme" parent="AppTheme">
-        <item name="android:layout_marginBottom">@dimen/d10</item>
+        <item name="android:layout_marginBottom">@dimen/d4</item>
+    </style>
+
+    <style name="feedback_editText" parent="Base.Widget.AppCompat.EditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_marginStart">@dimen/d35</item>
+        <item name="android:layout_marginEnd">@dimen/d35</item>
+        <item name="android:layout_marginTop">@dimen/d4</item>
+        <item name="android:background">@drawable/shape_stroke_rectangle</item>
+        <item name="android:paddingStart">@dimen/d8</item>
+        <item name="android:paddingEnd">@dimen/d8</item>
+        <item name="android:drawablePadding">@dimen/d8</item>
+
+    </style>
+
+    <style name="profile_imgs">
+        <item name="android:layout_width">@dimen/d35</item>
+        <item name="android:layout_height">@dimen/d35</item>
+        <item name="android:layout_marginTop">@dimen/d11</item>
+        <item name="android:layout_marginStart">@dimen/d10</item>
+        <item name="android:layout_alignParentStart">true</item>
+
+    </style>
+
+    <style name="DialogAnimation_2">
+        <item name="android:windowEnterAnimation">@anim/translate_from_bottom_to_up</item>
+        <item name="android:windowExitAnimation">@anim/translate_from_up_to_bottom</item>
     </style>
 
 </resources>

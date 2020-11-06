@@ -4,176 +4,271 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg_register"
-    >
+    android:background="@drawable/bg_register">
 
     <ImageView
         android:id="@+id/register_activity_Iv_back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_back"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="@dimen/d20"
         android:layout_marginTop="@dimen/d20"
-        />
+        app:srcCompat="@drawable/ic_register_back" />
 
-<ScrollView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="@dimen/d125"
-    >
-
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_marginTop="@dimen/d160">
 
-        <EditText
-            android:id="@+id/register_username"
-            android:hint="@string/user_name"
-            android:inputType="text"
-            style="@style/register_editText"
-            android:drawableStart="@drawable/ic_username"
-            />
-
-        <EditText
-            android:id="@+id/register_password"
-            android:hint="@string/password"
-            android:inputType="text"
-            style="@style/register_editText"
-            android:drawableStart="@drawable/ic_password"
-            />
-        <EditText
-            android:id="@+id/register_confirm_password"
-            android:hint="@string/confirm_password"
-            style="@style/register_editText"
-            android:inputType="text"
-            android:drawableStart="@drawable/ic_password"
-            />
-
-        <EditText
-            android:id="@+id/register_mobile_number"
-            android:hint="@string/mobile_number"
-            android:inputType="phone"
-            style="@style/register_editText"
-            android:drawableStart="@drawable/ic_mobile_number"
-            />
-
-        <EditText
-            android:id="@+id/register_email"
-            android:hint="@string/email"
-            android:inputType="textEmailAddress"
-            style="@style/register_editText"
-            android:drawableStart="@drawable/ic_email"
-            />
-
-        <EditText
-            android:id="@+id/register_home_address"
-            android:hint="@string/home_address"
-            style="@style/register_editText"
-            android:inputType="text"
-            android:drawableStart="@drawable/ic_home_address"
-            />
-
-
-        <EditText
-            android:id="@+id/register_bus_line"
-            android:hint="@string/bus_line"
-            style="@style/register_editText"
-            android:inputType="text"
-            android:drawableStart="@drawable/ic_bus_line"
-            />
-
-        <EditText
-            android:id="@+id/register_university"
-            android:hint="@string/university"
-            android:inputType="text"
-            style="@style/register_editText"
-            android:drawableStart="@drawable/ic_university"
-            />
-
-        <EditText
-            android:id="@+id/register_faculty"
-            android:hint="@string/faculty"
-            style="@style/register_editText"
-            android:inputType="text"
-            android:drawableStart="@drawable/ic_faculty"
-            />
-
-        <EditText
-            android:id="@+id/register_level"
-            android:hint="@string/level"
-            style="@style/register_editText"
-            android:inputType="number"
-            android:drawableStart="@drawable/ic_level"
-            />
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-
-            >
-
-            <ImageView
-                android:id="@+id/register_user_profile"
-                android:layout_width="@dimen/d75"
-                android:layout_height="@dimen/d75"
-                android:src="@drawable/ic_add"
-                android:layout_weight="1"
-                />
-
-            <ImageView
-                android:id="@+id/register_user_table"
-                android:layout_width="@dimen/d75"
-                android:layout_height="@dimen/d75"
-                android:layout_weight="1"
-                android:src="@drawable/ic_add" />
-
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            >
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/user_profile_photo"
-                android:textColor="@color/white"
-                android:gravity="center"
-                android:layout_weight="1"
-                />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/time_table_photo"
-                android:textColor="@color/white"
-                android:gravity="center"
-                android:layout_weight="1"
-                />
-
-        </TableRow>
-
-
-        <Button
-            android:id="@+id/register_submit"
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/submit"
-            android:textColor="@color/white"
-            android:layout_marginStart="@dimen/d100"
-            android:layout_marginEnd="@dimen/d100"
-            android:background="@drawable/shape_sign_in_btn"
-            android:layout_gravity="center"
-            android:layout_marginTop="@dimen/d10"
-            android:layout_marginBottom="@dimen/d35"
-            />
+            >
 
-    </LinearLayout>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/d40"
+                android:layout_alignTop="@id/register_student_id"
+                android:layout_marginStart="@dimen/d30"
+                android:background="@color/white"
+                app:srcCompat="@drawable/ic_register_student_id" />
+
+            <EditText
+                android:id="@+id/register_student_id"
+                style="@style/register_editText"
+                android:hint="@string/student_id2"
+                android:inputType="text" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/d40"
+                android:layout_alignTop="@id/register_username"
+                android:layout_marginStart="@dimen/d30"
+                android:background="@color/white"
+                app:srcCompat="@drawable/ic_register_username" />
+
+            <EditText
+                android:id="@+id/register_username"
+                style="@style/register_editText"
+                android:layout_below="@id/register_student_id"
+                android:hint="@string/user_name"
+                android:inputType="text" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/d40"
+                android:layout_alignTop="@id/register_password"
+                android:layout_marginStart="@dimen/d30"
+                android:background="@color/white"
+                app:srcCompat="@drawable/ic_register_password" />
+
+            <EditText
+                android:id="@+id/register_password"
+                style="@style/register_editText"
+                android:layout_below="@id/register_username"
+                android:hint="@string/password"
+                android:inputType="text" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/d40"
+                android:layout_alignTop="@id/register_confirm_password"
+                android:layout_marginStart="@dimen/d30"
+                android:background="@color/white"
+                app:srcCompat="@drawable/ic_register_password" />
+
+            <EditText
+                android:id="@+id/register_confirm_password"
+                style="@style/register_editText"
+                android:layout_below="@id/register_password"
+                android:hint="@string/confirm_password"
+                android:inputType="text" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/d40"
+                android:layout_alignTop="@id/register_mobile_number"
+                android:layout_marginStart="@dimen/d30"
+                android:background="@color/white"
+                app:srcCompat="@drawable/ic_register_mobile" />
+
+            <EditText
+                android:id="@+id/register_mobile_number"
+                style="@style/register_editText"
+                android:layout_below="@id/register_confirm_password"
+                android:hint="@string/mobile_number"
+                android:inputType="phone" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/d40"
+                android:layout_alignTop="@id/register_email"
+                android:layout_marginStart="@dimen/d30"
+                android:background="@color/white"
+                app:srcCompat="@drawable/ic_register_email" />
+
+            <EditText
+                android:id="@+id/register_email"
+                style="@style/register_editText"
+                android:layout_below="@id/register_mobile_number"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/d40"
+                android:layout_alignTop="@id/register_home_address"
+                android:layout_marginStart="@dimen/d30"
+                android:background="@color/white"
+                app:srcCompat="@drawable/ic_register_address" />
+
+            <EditText
+                android:id="@+id/register_home_address"
+                style="@style/register_editText"
+                android:layout_below="@id/register_email"
+                android:hint="@string/home_address"
+                android:inputType="text" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/d40"
+                android:layout_alignTop="@id/register_activity_Sp_bus_line"
+                android:layout_marginStart="@dimen/d30"
+                android:background="@color/white"
+                app:srcCompat="@drawable/ic_register_bus_line" />
+
+            <!--<EditText-->
+                <!--android:id="@+id/register_bus_line"-->
+                <!--style="@style/register_editText"-->
+                <!--android:layout_below="@id/register_home_address"-->
+                <!--android:hint="@string/bus_line"-->
+                <!--android:inputType="text" />-->
+
+            <Spinner
+                android:id="@+id/register_activity_Sp_bus_line"
+                style="@style/register_editText"
+                android:layout_below="@id/register_home_address"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/d40"
+                android:layout_alignTop="@id/register_activity_Sp_university"
+                android:layout_marginStart="@dimen/d30"
+                android:background="@color/white"
+                app:srcCompat="@drawable/ic_register_university" />
+
+            <Spinner
+                android:id="@+id/register_activity_Sp_university"
+                style="@style/register_editText"
+                android:layout_below="@id/register_activity_Sp_bus_line"
+                />
+
+            <!--<EditText-->
+                <!--android:id="@+id/register_university"-->
+                <!--style="@style/register_editText"-->
+                <!--android:layout_below="@id/register_bus_line"-->
+                <!--android:hint="@string/university"-->
+                <!--android:inputType="text" />-->
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/d40"
+                android:layout_alignTop="@id/register_faculty"
+                android:layout_marginStart="@dimen/d30"
+                android:background="@color/white"
+                app:srcCompat="@drawable/ic_register_faculty" />
+
+            <EditText
+                android:id="@+id/register_faculty"
+                style="@style/register_editText"
+                android:layout_below="@id/register_activity_Sp_university"
+                android:hint="@string/faculty"
+                android:inputType="text" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/d40"
+                android:layout_alignTop="@id/register_level"
+                android:layout_marginStart="@dimen/d30"
+                android:background="@color/white"
+                app:srcCompat="@drawable/ic_register_level"
+
+                />
+
+            <EditText
+                android:id="@+id/register_level"
+                style="@style/register_editText"
+                android:layout_below="@id/register_faculty"
+                android:hint="@string/level"
+                android:inputType="number" />
+
+            <!--<TableRow-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+
+            <!--&gt;-->
+
+            <!--<ImageView-->
+            <!--android:id="@+id/register_user_profile"-->
+            <!--android:layout_width="@dimen/d75"-->
+            <!--android:layout_height="@dimen/d75"-->
+            <!--android:src="@drawable/ic_add"-->
+            <!--android:layout_weight="1"-->
+            <!--/>-->
+
+            <!--<ImageView-->
+            <!--android:id="@+id/register_user_table"-->
+            <!--android:layout_width="@dimen/d75"-->
+            <!--android:layout_height="@dimen/d75"-->
+            <!--android:layout_weight="1"-->
+            <!--android:src="@drawable/ic_add" />-->
+
+            <!--</TableRow>-->
+
+            <!--<TableRow-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--&gt;-->
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="@string/user_profile_photo"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_weight="1"-->
+            <!--/>-->
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="@string/time_table_photo"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_weight="1"-->
+            <!--/>-->
+
+            <!--</TableRow>-->
 
 
-</ScrollView>
+            <Button
+                android:id="@+id/register_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/register_level"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/d100"
+                android:layout_marginTop="@dimen/d10"
+                android:layout_marginEnd="@dimen/d100"
+                android:layout_marginBottom="@dimen/d35"
+                android:background="@drawable/shape_sign_in_btn"
+                android:text="@string/submit"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+
+
+    </ScrollView>
 
 
 </RelativeLayout>

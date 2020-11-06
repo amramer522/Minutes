@@ -5,7 +5,7 @@
     <string name="password">Password</string>
     <string name="user_name">User Name</string>
     <string name="student_id">Student ID</string>
-    <string name="slogan">travel with no regrets</string>
+    <string name="slogan">Travel with no regrets</string>
     <string name="fill_all_fields">Fill all fields</string>
     <string name="app_logo">App Logo</string>
     <string name="white_gradient">White Gradient</string>
@@ -53,6 +53,24 @@
     <string name="google_maps_API_key">AIzaSyBiqNArY-7vdKuKY33QQvtWdw81vDd7MQs</string>
     <string name="tell_us_what_is_your_feedback_and_explain">Tell us, what is your feedback and explain</string>
     <string name="exit">Exit</string>
+    <string name="student_id2">Student Id</string>
+    <string name="save_your_postion">Save Your position</string>
+    <string name="mark_your_location">Mark Your Location</string>
+    <string name="student_name">Student Name</string>
+    <string name="confirm_request">Confirm Request</string>
+    <string name="driver_name">Driver Name : </string>
+    <string name="bus_time">Bus Time :</string>
+    <string name="student_on_bus">Students on bus : </string>
+    <string name="available_seats">Available seats : </string>
+    <string name="bus_request">Bus Request</string>
+    <string name="bus_show">Bus Show</string>
+    <string name="type_your_note">Type your note</string>
+    <string name="write_your_note_then_mark_your_location_on_the_map">Write your note then mark your location on the map</string>
+    <string name="bus_name">Bus Name</string>
+    <string name="login">login</string>
+    <string name="bus_booking">BUS BOOKING</string>
+    <string name="no_internet">No Internet ...</string>
+    <string name="no_buses_today">No Buses Today</string>
 
 
 </resources>

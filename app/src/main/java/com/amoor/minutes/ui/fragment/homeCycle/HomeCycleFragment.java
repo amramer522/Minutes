@@ -1,17 +1,21 @@
 package com.amoor.minutes.ui.fragment.homeCycle;
 
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
 import com.amoor.minutes.R;
 import com.amoor.minutes.adapter.MyPagerAdapter;
+import com.amoor.minutes.ui.activity.home.HomeActivity;
+import com.amoor.minutes.ui.activity.user.LoginActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -28,9 +32,10 @@ public class HomeCycleFragment extends Fragment {
     @BindView(R.id.content_home_pager)
     ViewPager contentHomePager;
     Unbinder unbinder;
+    @BindView(R.id.Home_Cycle_Fragment_Srl_Swipe)
+    SwipeRefreshLayout HomeCycleFragmentSrlSwipe;
 
-    public HomeCycleFragment()
-    {
+    public HomeCycleFragment() {
         // Required empty public constructor
     }
 
@@ -45,6 +50,26 @@ public class HomeCycleFragment extends Fragment {
         MyPagerAdapter adapter = new MyPagerAdapter(getActivity().getSupportFragmentManager());
         contentHomePager.setAdapter(adapter);
         contentHomeTab.setupWithViewPager(contentHomePager);
+        contentHomePager.setCurrentItem(1);
+
+        HomeCycleFragmentSrlSwipe.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh()
+            {
+                int selectedTabPosition = contentHomeTab.getSelectedTabPosition();
+                MyPagerAdapter adapter = new MyPagerAdapter(getActivity().getSupportFragmentManager());
+                contentHomePager.setAdapter(adapter);
+                contentHomePager.setCurrentItem(selectedTabPosition);
+                contentHomeTab.setupWithViewPager(contentHomePager);
+                contentHomePager.setCurrentItem(1);
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        HomeCycleFragmentSrlSwipe.setRefreshing(false);
+                    }
+                }, 2000);
+            }
+        });
 
         return view;
     }

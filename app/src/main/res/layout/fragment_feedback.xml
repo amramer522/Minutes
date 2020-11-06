@@ -11,29 +11,32 @@
     >
 
 
-    <!--<ImageView-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="@dimen/d150"-->
-        <!--android:src="@drawable/img_feedback"-->
-        <!--android:layout_marginTop="@dimen/d50"-->
-        <!--/>-->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/d150"
+        android:src="@drawable/img_feedback_logo"
+        android:layout_marginTop="@dimen/d40"
+        android:layout_marginStart="@dimen/d35"
+        android:layout_marginEnd="@dimen/d35"
+        android:layout_gravity="center_horizontal"
+        />
 
 
     <EditText
-        android:id="@+id/feedback_fragment_Et_user_name"
-        android:hint="@string/user_name"
-        style="@style/register_editText"
+        android:id="@+id/feedback_fragment_Et_student_name"
+        android:hint="@string/student_name"
+        style="@style/feedback_editText"
         android:inputType="text"
-        android:layout_marginTop="@dimen/d20"
-        android:drawableStart="@drawable/ic_username"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/d50"
         />
 
     <EditText
-        android:id="@+id/feedback_fragment_Et_mobile_number"
-        android:hint="@string/mobile_number"
-        style="@style/register_editText"
+        android:id="@+id/feedback_fragment_Et_student_id"
+        android:hint="@string/student_id"
+        style="@style/feedback_editText"
         android:inputType="phone"
-        android:drawableStart="@drawable/ic_mobile_number"
+        android:gravity="center"
         />
 
     <EditText
